@@ -74,11 +74,11 @@ const AboutUs = () => {
     <div className="container mx-auto max-w-6xl text-center">
       <h2 className="text-gray-800 text-4xl font-extrabold mb-10">Meet our Team</h2>
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 px-6">
         {teamData.map((member) => (
           <div
             key={member.id}
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all"
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all "
           >
             <div style={{ backgroundColor: member.color }} className="h-32"></div>
             <img
