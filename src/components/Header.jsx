@@ -47,8 +47,8 @@ const Header = ({cartCount}) => {
           </div>
 
           {/* Desktop Cart Icon */}
-          <div className="hidden md:flex items-center relative">
-            <NavLink to="/cart" aria-label="View cart">
+          <div className="  flex items-center ">
+            <NavLink to="/cart" aria-label="View cart" className='relative'>
               <ShoppingCart className="w-6 h-6 text-gray-600 hover:text-[#32CD32] transition-colors" />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 bg-[#32CD32] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
@@ -56,11 +56,10 @@ const Header = ({cartCount}) => {
                 </span>
               )}
             </NavLink>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden pl-4"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation menu"
           >
@@ -71,6 +70,8 @@ const Header = ({cartCount}) => {
             )}
           </button>
         </div>
+        </div>
+
 
         {/* Mobile Navigation */}
         <AnimatePresence>
@@ -96,14 +97,14 @@ const Header = ({cartCount}) => {
                     {item.name}
                   </NavLink>
                 ))}
-                <NavLink
+                {/* <NavLink
                   to="/cart"
                   className="flex items-center space-x-2 text-gray-600 hover:text-[#32CD32] transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   <ShoppingCart className="w-5 h-5" />
                   <span>Cart ({cartCount})</span>
-                </NavLink>
+                </NavLink> */}
               </div>
             </motion.div>
           )}
