@@ -6,4 +6,8 @@ export default defineConfig({
   optimizeDeps: {
     include: ['swiper'], 
   },
+  base: '/',
+  build: {
+    outDir: 'dist',  // This is the default output directory
+  },
 });
