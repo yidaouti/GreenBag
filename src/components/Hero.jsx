@@ -28,43 +28,41 @@ export const Hero = () => {
             </Link>
           </motion.div>
           
-          <motion.div 
-            className="md:w-1/2 mt-12 md:mt-0"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative w-full h-[400px]">
-              <motion.div
-                className="absolute inset-0 flex items-center justify-center"
-                animate={{ 
-                  rotate: [0, 10, 0],
-                  scale: [1, 1.1, 1]
-                }}
-                transition={{ 
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                {/* <ShoppingBag size={300} className="text-[#32CD32]" />
-                 */}
-                <img src={img} alt="" style={{width:'70%'}}/>
+          <motion.div
+  className="relative w-full h-[400px]"
+>
+  <motion.div
+    className="absolute inset-0 flex items-center justify-center"
+    animate={{ 
+      rotate: [0, 10, 0],
+      scale: [1, 1.1, 1]
+    }}
+    transition={{ 
+      duration: 4,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  >
+    <img
+      src={img}
+      alt="Greenbag Logo"
+      className="w-[60%] sm:w-[50%] md:w-[60%] lg:w-[40%] mx-auto"
+    />
+  </motion.div>
+  <motion.div
+    className="absolute inset-0 bg-gradient-to-r from-transparent to-[#32CD32]/10"
+    animate={{ 
+      opacity: [0.3, 0.6, 0.3]
+    }}
+    transition={{ 
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  />
+</motion.div>
 
-              </motion.div>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent to-[#32CD32]/10"
-                animate={{ 
-                  opacity: [0.3, 0.6, 0.3]
-                }}
-                transition={{ 
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </div>
