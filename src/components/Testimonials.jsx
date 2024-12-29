@@ -4,17 +4,17 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'mohamed salah ',
     text: 'GreenBag has completely changed how I shop. The quality is outstanding and knowing I\'m helping the environment makes every purchase worthwhile.',
     rating: 5
   },
   {
-    name: 'Michael Chen',
+    name: 'youssef idaouti',
     text: 'These bags are not only eco-friendly but also incredibly stylish. I get compliments every time I use them!',
     rating: 5
   },
   {
-    name: 'Emma Williams',
+    name: 'marouane chamakh',
     text: 'The durability is impressive. I\'ve been using mine daily for over a year and it still looks brand new.',
     rating: 5
   }
