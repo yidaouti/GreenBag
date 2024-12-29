@@ -8,17 +8,12 @@ import {
     faHandHoldingWater,
     faSeedling,
 } from '@fortawesome/free-solid-svg-icons';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper';
-import heroImg1 from '../assets/img/hero1.webp';
-import heroImg2 from '../assets/img/hero2.webp';
-import heroImg3 from '../assets/img/hero3.webp';
-import { Link } from 'react-router-dom';
 import { Testimonials } from '../components/Testimonials';
 import { Hero } from '../components/Hero';
+import BestOfferSection from '../components/BestOfferSection';
 
 const features = [
     {
@@ -59,8 +54,11 @@ const Home = () => {
             {/* Hero Section with Swiper */}
     <Hero/>
 
+    <BestOfferSection/>
+
+
             {/* Features Section */}
-            <section className="py-16 min-h-screen flex items-center bg-gray-50">
+            <section className="py-16 min-h-screen flex items-center bg-white">
                 <div className="container mx-auto px-5">
                     {/* Introductory Text */}
                     <div className="text-center max-w-4xl mx-auto mb-10">
@@ -94,6 +92,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
 
             <Testimonials/>
         </main>

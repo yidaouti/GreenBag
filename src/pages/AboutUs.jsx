@@ -3,32 +3,50 @@ import img from '../assets/img/about.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import hsina from '../assets/img/team/hsina.jpg';
-
+import med from '../assets/img/team/med.jpg';
+import brahim from '../assets/img/team/brahim.jpg';
+import inco from '../assets/img/team/inco.jpg';
+import { Link } from 'react-router-dom';
 
 const teamData = [
   {
     id: 1,
-    name: 'hsinox',
-    role: 'Software Engineer',
-    bio: 'Passionate about creating scalable and sustainable solutions.',
+    name: 'Lhcen Boussedra',
+    role: 'Manufacturing and design',
     img: hsina,
     color: '#8cbed6',
+    fb:'https://www.facebook.com/profile.php?id=100071638552830'
   },
   {
     id: 2,
-    name: 'Mark Adair',
-    role: 'Product Manager',
-    bio: 'Driving innovation and product excellence every day.',
-    img: 'https://readymadeui.com/team-2.webp',
-    color: '#6fa143',
+    name: 'Mohamed Fakir',
+    role: 'Manufacturing and design',
+    img: med,
+    color: '#8cbed6',
+    fb: 'https://www.facebook.com/Mohamed.PNX.01',
   },
   {
     id: 3,
-    name: 'Simon Konecki',
-    role: 'Web Designer',
-    bio: 'Designing beautiful and user-friendly web experiences.',
-    img: 'https://readymadeui.com/team-3.webp',
-    color: '#00a8ff',
+    name: 'Brahim Elallam',
+    role: 'marketing',
+    img: brahim,
+    color: '#8cbed6',
+    fb:'https://www.facebook.com/brahim.elallam.18'
+  },
+  {
+    id: 3,
+    name: 'Zakaria Nasri',
+    role: 'Contact Service',
+    img: inco,
+    color: '#8cbed6',
+    fb:'https://www.facebook.com/zakaria.hakim.798'
+  },
+  {
+    id: 3,
+    name: 'abdelhadi',
+    role: 'Delivery service',
+    img: inco,
+    color: '#8cbed6',
   },
 ];
 
@@ -59,12 +77,12 @@ const AboutUs = () => {
               Join us on this mission to make a positive impact on the environment, one bag at a time.
             </p>
 
-            <button
-              className="mt-8 px-6 py-3 flex items-center justify-center gap-2 bg-green-600 text-white font-medium rounded-md shadow-lg hover:shadow-xl transition duration-300"
+            <Link to='https://www.facebook.com/green.bag.206066'
+              className=" mt-8 px-6 py-3 flex items-center justify-center gap-2 bg-green-600 text-white font-medium rounded-md shadow-lg hover:shadow-xl transition duration-300 "
             >
               <FontAwesomeIcon icon={faFacebook} className="text-lg" />
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -89,17 +107,20 @@ const AboutUs = () => {
             <div className="p-6">
               <h4 className="text-gray-800 text-lg font-bold">{member.name}</h4>
               <p className="text-gray-600 text-sm mt-1">{member.role}</p>
-              <p className="text-gray-600 mt-4 text-sm">{member.bio}</p>
 
               <div className="space-x-4 mt-6 flex justify-center">
-                <a
-                  href="#"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-gray-200"
-                  title="Facebook"
-                >
-                  <FontAwesomeIcon icon={faFacebook} className="text-blue-600" />
-                </a>
-                <a
+              {member.fb && (
+    <a
+      href={member.fb}
+      className="w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-gray-200"
+      title="Facebook"
+    >
+      {/* You can add an icon or text here */}
+      <FontAwesomeIcon icon={faFacebook} className="text-blue-600" />
+      </a>
+  )}
+                  
+                {/* <a
                   href="#"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-gray-200"
                   title="Twitter"
@@ -112,7 +133,7 @@ const AboutUs = () => {
                   title="Instagram"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-pink-500" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

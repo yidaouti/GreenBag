@@ -14,7 +14,7 @@ const Footer = () => {
                 one bag at a time.
               </p>
               <div className="flex space-x-4">
-                <motion.a
+                {/* <motion.a
                   href="#"
                   whileHover={{ scale: 1.1 }}
                   className="text-[#32CD32] hover:text-[#28a428]"
@@ -27,9 +27,9 @@ const Footer = () => {
                   className="text-[#32CD32] hover:text-[#28a428]"
                 >
                   <Twitter />
-                </motion.a>
+                </motion.a> */}
                 <motion.a
-                  href="#"
+                  href="https://www.facebook.com/green.bag.206066"
                   whileHover={{ scale: 1.1 }}
                   className="text-[#32CD32] hover:text-[#28a428]"
                 >

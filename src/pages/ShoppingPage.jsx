@@ -13,56 +13,56 @@ const products = [
   {
     id: 1,
     name: 'Eco Tote',
-    price: 8,
+    price: 2,
     description: 'A versatile tote bag designed with sustainable materials to support eco-friendly .',
     image: p1,
   },
   {
     id: 2,
     name: 'Canvas Carry',
-    price: 10,
+    price: 1.5,
     description: 'A durable and stylish eco bag perfect for everyday activities and shopping trips.',
     image: p2,
   },
   {
     id: 3,
     name: 'Organic Shopper',
-    price: 12,
+    price: 2,
     description: 'An eco-conscious choice for groceries, crafted to reduce plastic usage effortlessly.',
     image: p3,
   },
   {
     id: 4,
     name: 'Reusable Classic',
-    price: 9,
+    price: 1,
     description: 'This sturdy and practical bag is perfect for all your daily errands and adventures.',
     image: p4,
   },
   {
     id: 5,
     name: 'Foldable Wonder',
-    price: 11,
+    price: 2.5,
     description: 'Compact and portable, this foldable bag is a convenient companion for any outing.',
     image: p5,
   },
   {
     id: 6,
     name: 'Sustainable Chic',
-    price: 15,
+    price: 1.5,
     description: 'An elegant and eco-friendly bag that combines functionality with stylish design.',
     image: p6,
   },
   {
     id: 7,
     name: 'Eco Traveler',
-    price: 14,
+    price: 1,
     description: 'This versatile bag is ideal for trips and errands, keeping sustainability in focus.',
     image: p7,
   },
   {
     id: 8,
     name: 'Nature’s Companion',
-    price: 13,
+    price: 2,
     description: 'Designed for functionality and sustainability, it’s perfect for every occasion.',
     image: p8,
   },
@@ -109,7 +109,7 @@ const ShoppingPage = ({onCartCountChange}) => {
   
 
   return (
-    <div className="font-[sans-serif] bg-gray-100">
+    <div className="font-[sans-serif] bg-gray-100 ">
       <div className="p-4 mx-auto lg:max-w-7xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
         {/* Intro Section */}
         <div className="text-center mb-8">
