@@ -2,52 +2,38 @@ import React from 'react';
 import img from '../assets/img/about.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import hsina from '../assets/img/team/hsina.jpg';
-import med from '../assets/img/team/med.jpg';
-import brahim from '../assets/img/team/brahim.jpg';
-import inco from '../assets/img/team/inco.jpg';
+import youssef from '../assets/img/team/5.jpg';
+import sarah from '../assets/img/team/g.jpg';
+import omar from '../assets/img/team/34.jpg';
 import { Link } from 'react-router-dom';
 
 const teamData = [
   {
     id: 1,
-    name: 'Lhcen Boussedra',
-    role: 'Manufacturing and design',
-    img: hsina,
-    color: '#8cbed6',
-    fb:'https://www.facebook.com/profile.php?id=100071638552830'
+    name: 'Youssef Benali',
+    role: 'Product Design',
+    img: youssef, 
+    color: '#f7a8a8',
+    fb: 'https://www.facebook.com/youssef.benali.fake',
   },
   {
     id: 2,
-    name: 'Mohamed Fakir',
-    role: 'Manufacturing and design',
-    img: med,
-    color: '#8cbed6',
-    fb: 'https://www.facebook.com/Mohamed.PNX.01',
+    name: 'Sarah Amrani',
+    role: 'Quality Assurance',
+    img: sarah, 
+    color: '#f7d794',
+    fb: 'https://www.facebook.com/sarah.amrani.fake',
   },
   {
     id: 3,
-    name: 'Brahim Elallam',
-    role: 'marketing',
-    img: brahim,
-    color: '#8cbed6',
-    fb:'https://www.facebook.com/brahim.elallam.18'
+    name: 'Omar Idrissi',
+    role: 'Marketing Specialist',
+    img: omar, 
+    color: '#c8d6e5',
+    fb: 'https://www.facebook.com/omar.idrissi.fake',
   },
-  {
-    id: 3,
-    name: 'Zakaria Nasri',
-    role: 'Contact Service',
-    img: inco,
-    color: '#8cbed6',
-    fb:'https://www.facebook.com/zakaria.hakim.798'
-  },
-  {
-    id: 3,
-    name: 'abdelhadi',
-    role: 'Delivery service',
-    img: inco,
-    color: '#8cbed6',
-  },
+  
+  
 ];
 
 const AboutUs = () => {
